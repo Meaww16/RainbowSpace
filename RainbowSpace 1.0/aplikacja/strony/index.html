@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<meta charset="UTF-8">
+<title>RainbowSpace | Wyszukiwarka</title>
+<body style="background-color: rgb(167, 216, 209); color:rgb(14, 14, 14)"></body>
+<p>
+<a>
+<center><h1>Wyszukiwarka RainbowSpace</h1></center>
+<hr style="height: 51px; background: rgb(76, 208, 218); border: px;">
+<center><h1><a href="index.html">Wyszukiwarka</a>,<a href="home.html">strona główna</a>,<a href="info.html">Informacje</a>,<a href="projekty.html">Projekty</a>,<a href="online.html">Społeczność</a></h1></center></a></p>
+<center><h3><input type="text" name="" class="query" value="" ></h3></center>
+<div class="button" >
+<center><button class="searchBtn">Wyszukaj</button></center>
+</div>
+<section>
+<script>
+let query = document.querySelector('.query')
+let searchBtn = document.querySelector('.searchBtn')
+searchBtn.onclick = function(){
+let url ='https://www.google.pl/search?q='+query.value;
+window.open(url)
+}
+</script>
+</section>
+</script>
+</section>
+</head>
+</p>
+</html>
